@@ -52,7 +52,7 @@ let PlayerMoves = {
          let playerAttackValues = playerAttack();
          let  totalDamage = playerAttackValues[0] * playerAttackValues[1];
          enemy.health = enemy.health - totalDamage;
-         alert(`Dolió por ${playerAttackValues[0]} y arañaste ${playerAttackValues[1]} veces`);
+         alert(`Tu daño fue de ${playerAttackValues[0]} arañaste ${playerAttackValues[1]} vez/veces`);
          if (enemy.health <= 0) {
             alert("Ganaste!");
             // Para que no aparezca en negativo
@@ -64,7 +64,7 @@ let PlayerMoves = {
             let enemyAttackValues = enemyAttack();
             let  totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
          player.health = player.health - totalDamage;
-         alert(`Te dolió por ${enemyAttackValues[0]} y pegaron ${enemyAttackValues[1]} veces`);
+         alert(`El daño que te hicieron fue de ${enemyAttackValues[0]} y te pegaron ${enemyAttackValues[1]} vez/veces`);
          if (player.health <= 0) {
             alert("Perdiste :(");
             // Para que no aparezca en negativo
@@ -79,7 +79,7 @@ let PlayerMoves = {
         let enemyAttackValues = enemyAttack();
         let  totalDamage = enemyAttackValues[0] * enemyAttackValues[1];
         player.health = player.health - totalDamage;
-        alert(`Te dolió por ${enemyAttackValues[0]} y te pegaron ${enemyAttackValues[1]} veces`);
+        alert(`El daño que te hicieron fue de ${enemyAttackValues[0]} y te pegaron ${enemyAttackValues[1]} vez/veces`);
         if (player.health <= 0) {
            alert("Perdiste :( ");
            // Para que no aparezca en negativo
@@ -91,11 +91,11 @@ let PlayerMoves = {
            let playerAttackValues = playerAttack();
            let  totalDamage = playerAttackValues[0] * playerAttackValues[1];
         enemy.health = enemy.health - totalDamage;
-        alert(`Dolió por ${playerAttackValues[0]} y arañaste ${playerAttackValues[1]} veces`);
+        alert(`Tu daño fue de ${playerAttackValues[0]} arañaste ${playerAttackValues[1]} vez/veces`);
         if (enemy.health <= 0) {
            alert("Ganaste");
            // Para que no aparezca en negativo
-           getEnemyrHealth.innerHTML = 'Health: 0';
+           getEnemyHealth.innerHTML = 'Health: 0';
            getPlayerHealth.innerHTML = 'Health: ' + player.health;
            } else {
                getEnemyHealth.innerHTML = 'Health: ' + enemy.health;

@@ -40,7 +40,7 @@ let GameManager = {
         let getEnemy = document.querySelector(".enemy");
         // Se crea enemigo
         let enemy00 = new Enemy("Doggo", 390, 100, 200, 250);
-        let enemy01 = new Enemy("AngryBird", 230, 80, 150, 120);
+        let enemy01 = new Enemy("AngryBird", 230, 80, 140, 120);
         let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(2));
         console.log(chooseRandomEnemy);
         switch (chooseRandomEnemy) {
