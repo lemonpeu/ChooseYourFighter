@@ -14,4 +14,14 @@ body {
 
 img {
     width: 160px;
+    
 }
+
+a:link,
+a:visited, 
+a:hover, 
+a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
