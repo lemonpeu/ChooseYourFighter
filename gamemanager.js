@@ -41,7 +41,9 @@ let GameManager = {
         // Se crea enemigo
         let enemy00 = new Enemy("Doggo", 390, 100, 200, 250);
         let enemy01 = new Enemy("AngryBird", 230, 80, 140, 120);
-        let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(2));
+        let enemy02 = new Enemy("Blep-Doggo", 400, 160, 225, 200);
+        let enemy03 = new Enemy("Shy bird", 250, 100, 198, 195);
+        let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(4));
         console.log(chooseRandomEnemy);
         switch (chooseRandomEnemy) {
             case 0:
@@ -50,6 +52,12 @@ let GameManager = {
             case 1:
             enemy = enemy01;
             break; 
+            case 2:
+            enemy = enemy02;
+            break;
+            case 3:
+            enemy = enemy03;
+            break;
         }
         getHeader.innerHTML = '<p>Attack!</p>';
         //PlayerMoves.calcAttack objeto que va a calcular el mov del player.
