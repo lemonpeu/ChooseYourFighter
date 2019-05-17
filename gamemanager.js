@@ -42,7 +42,7 @@ let GameManager = {
         let enemy00 = new Enemy("Doggo", 390, 100, 200, 250);
         let enemy01 = new Enemy("AngryBird", 230, 80, 140, 120);
         let enemy02 = new Enemy("Blep-Doggo", 400, 160, 225, 200);
-        let enemy03 = new Enemy("Shy bird", 250, 100, 198, 195);
+        let enemy03 = new Enemy("Shy-bird", 250, 100, 198, 195);
         let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(4));
         console.log(chooseRandomEnemy);
         switch (chooseRandomEnemy) {
